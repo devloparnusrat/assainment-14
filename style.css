@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;1,100;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans' sans-serif;
+}
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Yellowtail', cursive;  */
+
+.container{
+    width: 1240px;
+    margin: auto;
+}
+
+.menu{
+    text-align: center;
+}
+.menu ul{}
+.menu ul li{
+    display: inline-block;
+    padding: 10px 10px;
+    background: #3ecefe;
+}
+.menu ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: -4;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+
+.menu ul li a::before{
+    content: "";
+    width: 0%;
+    height: 10%;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+
+/* menu hover part */
+
+.menu ul li a:hover::before{
+    width: 100%;
+}
+
+   .menu ul li:hover{
+        background: #f8f7f6;
+    }
+    
+    .menu ul li a:hover{
+        color: #3dcefb;
+    }
+
+    /* banner section start */
+    .banner-div{
+        background: #39cefe;
+        margin-top: 10px;
+    }
+
+    .banner-content{
+        text-align: center;
+        padding: 112px 0;
+        color: white;
+    }
+
+
+
+    .banner-content h3{
+        font-size: 17px;
+        font-weight: 400px;
+        margin: 12px auto;
+    }
+
+    .banner-content h2{
+        font-size: 42px;
+        font-weight: 750px;
+        margin-bottom: 20px;
+    }
+
+
+    button{
+        background: white;
+        font-size: 25px;
+        padding: 10px;
+        color: #dddddd;
+        font-weight: 400px;
+        border-radius: 10px;
+        border: none;
+        position: relative;
+        z-index: 1;
+    }
+    button a{
+        text-decoration: none;
+        color: #dddddd;
+        color: ;
+        
+    }
+
+     button::before{
+        content: "";
+        background: black;
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+       z-index: -1;
+       transition: .5s;
+       
+    }
+    
+    button:hover::before{
+         width: 100%;
+    } 
+    /* banner section css end */
+
+
+    /* image-section start */
+    .contant-img{
+        text-align: center;
+    }
+
+    .contant-img h1{
+        font-size: 25px;
+        padding-top: 100px;
+        padding-bottom:10px;
+    } 
+    .contant-img p{
+        font-size: 15px; 
+        padding-bottom: 80px;
+    }
+
+    .image{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        padding-top: 30px;
+    }
+    .image img{
+        width: 252px;
+        height: 188px;
+        margin-right: 10px;
+    }
+
+    .comon{
+        overflow: hidden;
+        margin-left: 14px;
+    }
+
+    .image-two{
+        padding-top: 18px;
+        padding-bottom: 50px;
+    }
+
+
+    .pic1:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+
+    .pic2:hover{
+        transform: rotate(18deg);
+        transition: .7s;
+    }
+    .pic3:hover{
+        transform: skew(15deg);
+        transition: .7s;
+        
+    }
+
+    .pic4:hover{
+        transform: rotate(22deg);
+         transition: .7s;
+    }
+    .pic5:hover{
+        transform: rotate(20deg);
+        transition: .7s;
+    }
+    .pic6:hover{
+        transform: rotate(360deg );
+        transition: .7s;
+    }
+    .pic7:hover{
+        transform: scale(1.5);
+        transition: .7s;
+    }
+    .pic8:hover{
+        transform: scale(1.1);
+        transition: .7s;
+     }
+
+
+    /* content-two */
+    .contant-two{
+      text-align: center;
+      width: 90%;
+      margin: auto;
+    }
+    .contant-two h1{
+        font-size: 25px;
+        padding-top: 70px;
+    }
+    .contant-two p{
+         padding-bottom: 90px;
+         font-weight: 30px; 
+         color: #9a9c9f;
+         text-align: justify;
+    }
+
+
+    /* step section */
+.step{
+    text-align: center;
+    padding-bottom: 14px;
+}
+    .over{
+      display: inline-block; 
+      text-align: center;
+      background: black;
+      color: white;
+      padding: 10px 15px;
+      margin: auto;
+      margin-right: 20px;
+
+    }
+
+    .step1{
+        margin-right: 200px;
+    }
+    .step1:hover{
+        transform:rotate(-30deg) ;
+        transition: .5s;
+        background: #48dbfb;
+        color: black;
+    }
+    .step2:hover{
+        transform:scale(1.1) ;
+        transition: .5s;
+        background: #48dbfb;
+        color: black;
+
+    }
+    .step3{
+        margin-left: 200px;}
+
+        .step3:hover{
+            transform:rotate(30deg) ;
+        transition: .5s;
+        background: #48dbfb;
+        color: black;
+        }
+
+
+        /* footer section start */
+        .footer-section{
+            background: #000;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer-section p{
+            color: white;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
